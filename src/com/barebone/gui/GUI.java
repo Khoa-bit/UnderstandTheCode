@@ -10,11 +10,11 @@ public class GUI extends JFrame {
     public static final int HEIGHTJF = 610;
 
     public GUI() {
-        setSize(WIDTHJF, HEIGHTJF);
-        setLayout(new CardLayout());
-        setLocationRelativeTo(null);
-        setResizable(false);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        this.setSize(WIDTHJF, HEIGHTJF);
+        this.setLayout(new CardLayout());
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 //        MyContainer mContainer = new MyContainer(this);
 //        add(mContainer);
 //        WindowAdapter mwindow = new WindowAdapter() {
