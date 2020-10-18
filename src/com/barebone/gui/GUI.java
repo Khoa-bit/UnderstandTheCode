@@ -1,0 +1,30 @@
+package com.barebone.gui;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class GUI extends JFrame {
+    public static final int WIDTHJF = 905;
+    public static final int HEIGHTJF = 610;
+
+    public GUI() {
+        setSize(WIDTHJF, HEIGHTJF);
+        setLayout(new CardLayout());
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+//        MyContainer mContainer = new MyContainer(this);
+//        add(mContainer);
+//        WindowAdapter mwindow = new WindowAdapter() {
+//            @Override
+//            public void windowClosing(WindowEvent e) {
+//                GameSound.getIstance().stop();
+//                PlayGame.IS_RUNNING = false;
+//            }
+//        };
+//        addWindowListener(mwindow);
+    }
+
+}
