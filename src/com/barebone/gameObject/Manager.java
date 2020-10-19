@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class Manager {
     private Random random = new Random();
-//    private Bomber mBomber;
+    private Bomber mBomber;
     private ArrayList<Box> arrBox;
     private ArrayList<Box> arrShawDow;
 //    private ArrayList<Bomb> arrBomb;
@@ -30,14 +30,14 @@ public class Manager {
     }
 
     public void innitManager() {
-//        switch (round) {
-//            case 1:
-//                mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
-//                innit("src/Map1/BOX.txt", "src/Map1/SHADOW.txt",
-//                        "src/Map1/MONSTER.txt", "src/Map1/ITEM.txt");
-//                nextRound = 0;
-//                status = 0;
-//                break;
+        switch (round) {
+            case 1:
+                mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
+                innit("src/Map1/BOX.txt", "src/Map1/SHADOW.txt",
+                        "src/Map1/MONSTER.txt", "src/Map1/ITEM.txt");
+                nextRound = 0;
+                status = 0;
+                break;
 //            case 2:
 //                mBomber.setNew(315, 270);
 //                innit("src/Map2/BOX.txt", "src/Map2/SHADOW.txt",
@@ -52,10 +52,10 @@ public class Manager {
 //                nextRound = 0;
 //                status = 0;
 //                break;
-//
-//            default:
-//                break;
-//        }
+
+            default:
+                break;
+        }
 
     }
 
@@ -440,10 +440,10 @@ public class Manager {
     }
 
     public void setNewBomb() {
-//        switch (round) {
-//            case 1:
-//                mBomber.setNew(0, 540);
-//                break;
+        switch (round) {
+            case 1:
+                mBomber.setNew(0, 540);
+                break;
 //            case 2:
 //                mBomber.setNew(315, 270);
 //                break;
@@ -451,9 +451,9 @@ public class Manager {
 //                mBomber.setNew(315, 495);
 //                break;
 //
-//            default:
-//                break;
-//        }
+            default:
+                break;
+        }
     }
 
     public void changeOrientAll() {
@@ -518,9 +518,9 @@ public class Manager {
 //        return arrBomb;
 //    }
 
-//    public Bomber getmBomber() {
-//        return mBomber;
-//    }
+    public Bomber getmBomber() {
+        return mBomber;
+    }
 
     public int getStatus() {
         return status;
