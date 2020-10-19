@@ -15,16 +15,16 @@ public class GUI extends JFrame {
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-//        MyContainer mContainer = new MyContainer(this);
-//        add(mContainer);
-//        WindowAdapter mwindow = new WindowAdapter() {
-//            @Override
-//            public void windowClosing(WindowEvent e) {
+        MyContainer mContainer = new MyContainer(this);
+        add(mContainer);
+        WindowAdapter mwindow = new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
 //                GameSound.getIstance().stop();
-//                PlayGame.IS_RUNNING = false;
-//            }
-//        };
-//        addWindowListener(mwindow);
+                PlayGame.IS_RUNNING = false;
+            }
+        };
+        addWindowListener(mwindow);
     }
 
 }
